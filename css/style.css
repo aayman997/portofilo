@@ -1,0 +1,741 @@
+/* Start Global Code */
+
+*
+{
+	font-family : 'Montserrat', sans-serif;
+}
+
+p
+{
+	font-family : 'Saira Extra Condensed', sans-serif;
+}
+
+/* End Global Code */
+
+/*Start Nav-bar*/
+
+.nav-vertical
+{
+	position         : fixed;
+	z-index          : 3;
+	background-color : rgba(236, 240, 241, 0.45);
+	border-right     : 1px solid #00AD7C;
+	box-sizing       : border-box;
+	height           : 100vh;
+	width            : 5.9rem;
+	font-size        : 0.78rem;
+	transition       : font-size 0.2s ease-in-out,
+	width 0.2s ease-in-out;
+}
+
+.nav-vertical:hover
+{
+	font-size : 1rem;
+	width     : 7.5rem;
+}
+
+.nav-active .nav-item:first-child a
+{
+	text-align : center;
+}
+
+.nav-vertical:hover .nav-item img
+{
+	width       : 60px;
+	margin-left : 0;
+}
+
+.nav-vertical a
+{
+	color      : #303841;
+	transition : color 0.2s ease-in-out;
+}
+
+.nav-vertical a:hover
+{
+	color : #58E481;
+}
+
+.nav-active .active
+{
+	background-color : #00AD7C;
+}
+
+.nav-vertical .nav-item
+{
+	margin-bottom : 1rem;
+}
+
+.nav-vertical .nav-item img
+{
+	width       : 30px;
+	margin-left : 0;
+	transition  : width 0.2s ease-in-out;
+}
+
+/* Start nav-horizontal */
+.nav-horizontal
+{
+	background-color : rgba(236, 240, 241, 0.45);
+	border-bottom    : 1px solid #00AD7C;
+}
+
+.nav-horizontal a
+{
+	color      : #303841;
+	transition : color 0.2s ease-in-out;
+}
+
+.nav-horizontal a:hover
+{
+	color : #58E481;
+}
+
+.nav-horizontal .nav-item img
+{
+	width : 40px;
+}
+
+/*End Nav-bar*/
+
+/* Start Header *Hello* */
+
+.hello .carousel .carousel-indicators
+{
+	opacity    : .5;
+	color      : #00AD7C;
+	transition : opacity 0.2s ease-in-out;
+	cursor     : pointer;
+}
+
+.hello .carousel .carousel-indicators .active
+{
+	background-color : transparent !important;
+}
+
+.hello .carousel .carousel-indicators:hover
+{
+	opacity : 1;
+}
+
+.hello .carousel .carousel-inner .img-fluid
+{
+	width : 100%;
+}
+
+.hello .carousel .carousel-inner .overlay
+{
+	filter : grayscale(0%) opacity(60%);
+}
+
+.hello .carousel .carousel-inner .carousel-caption
+{
+	top       : 50%;
+	transform : translateY(-50%);
+	bottom    : initial;
+	color     : #303841;
+}
+
+.hello .carousel .carousel-inner .carousel-caption h1, h5
+{
+	margin-bottom : 2rem;
+}
+
+.hello .carousel .carousel-inner .carousel-caption h1 span
+{
+	color : #00AD7C;
+}
+
+.hello .carousel .carousel-inner .carousel-caption button
+{
+	border          : 2px solid #303841;
+	border-radius   : 0 2.2rem;
+	cursor          : pointer;
+	color           : #00AD7C;
+	font-size       : 1.8rem;
+	transition      : color .2s ease-in-out;
+	text-decoration : none;
+}
+
+.hello .carousel .carousel-inner .carousel-caption button:hover
+{
+	background : linear-gradient(135deg, #ECF0F1 40%, #00AD7C);
+	color      : #303841;
+}
+
+.hello .carousel .carousel-inner .title
+{
+	transform-style : preserve-3d;
+}
+
+.hello .carousel .carousel-control-prev, .carousel-control-next
+{
+	transition : opacity 0.2s ease-in-out;
+	color      : #00AD7C !important;
+}
+
+.hello .carousel .carousel-control-prev:hover, .carousel-control-next:hover
+{
+	color   : #00AD7C;
+	opacity : 1;
+}
+
+.hello .carousel .carousel-control-prev
+{
+	left : 15px;
+}
+
+.hello .carousel .carousel-control-next
+{
+	right : 15px;
+}
+
+/*
+.hello .img-fluid
+{
+	width : 100%;
+}
+
+.hello .overlay
+{
+	filter : grayscale(0%) opacity(60%);
+}
+
+
+
+.hello .carousel-item
+{
+	position : relative;
+}
+
+.title-height
+{
+	height   : 100%;
+	width    : 100%;
+	position : absolute;
+	top      : 0;
+	left     : 0;
+}
+
+.hello .carousel-item .title-parent
+{
+	color      : #303841;
+	height     : 100%;
+	width      : 100%;
+	display    : table;
+	text-align : center;
+}
+
+.hello .carousel-item .title
+{
+	display        : table-cell;
+	vertical-align : middle;
+}
+
+.hello .carousel-item .title h1, h5
+{
+	margin-bottom : 2rem;
+}
+
+.hello .carousel-item .title h1 span
+{
+	color : #00AD7C;
+}
+
+.hello .carousel-item .title button
+{
+	border          : 2px solid #303841;
+	border-radius   : 0 2.2rem;
+	cursor          : pointer;
+	color           : #00AD7C;
+	font-size       : 1.8rem;
+	transition      : color 0.2s ease-in-out;
+	text-decoration : none;
+}
+
+.hello .carousel-item .title button:hover
+{
+	background : linear-gradient(135deg, #ECF0F1 40%, #00AD7C);
+	color      : #303841;
+}
+
+!*
+.hello .carousel-item h1 .smile
+{
+	filter : hue-rotate(90deg);
+}
+*!
+.hello .carousel-control-next
+{
+	right : 15px;
+}
+
+.hello .carousel-control-prev
+{
+	left : 15px;
+}
+
+.hello .carousel-control-next,
+.hello .carousel-control-prev
+{
+	color : #00AD7C;
+}
+
+.hello .chevron-down
+{
+	position   : absolute;
+	bottom     : 10px;
+	width      : 100%;
+	color      : #00AD7C;
+	text-align : center;
+	opacity    : 0.5;
+	cursor     : pointer;
+	z-index    : 2;
+}
+
+.hello .chevron-down a
+{
+	color : #00AD7C;
+}
+
+.hello .chevron-down:hover
+{
+	opacity : 1;
+}
+*/
+
+/* Start Header *Hello* */
+
+/* Start Service */
+
+.service .head p
+{
+	font-size : 1.35rem;
+	padding   : 0 2rem;
+}
+
+.service .service-box .service-desc:not(:last-child)
+{
+	padding-bottom : 1rem;
+}
+
+.service .service-box .service-desc i
+{
+	width            : 5rem;
+	font-size        : 3rem;
+	height           : 5rem;
+	line-height      : 5rem;
+	color            : #00AD7C;
+	background-color : #ECF0F1;
+	border           : 2px solid #00AD7C;
+	border-radius    : 1rem;
+	transition       : color 0.2s linear,
+	background-color 0.2s linear,
+	border 0.2s linear;
+}
+
+.service .service-box .service-desc:hover i
+{
+	color            : #ECF0F1;
+	background-color : #00AD7C;
+	border           : 2px solid #ECF0F1;
+}
+
+.service .service-box .service-desc p
+{
+	font-size : 1.25rem;
+	padding   : 0 1rem;
+}
+
+/* End Service */
+
+/* Start about */
+
+.about
+{
+	background      : url("../img/pexels-photo-12064 copy.jpg") no-repeat fixed center;
+	background-size : cover;
+	color           : #FFF;
+}
+
+.about .over-lay
+{
+	background-color : rgba(74, 65, 64, 0.65);
+	padding-top      : 3rem;
+	padding-bottom   : 3rem;
+	border           : 0.1rem solid #ECF0F1;
+	border-radius    : 0 1rem 1rem 1rem;
+	box-shadow       : 3px 3px 8px 1px rgba(103, 50, 25, 1),
+	-3px -3px 8px 1px rgba(103, 50, 25, 1);
+}
+
+.about .over-lay .about-text h3
+{
+	border-bottom : 0.2rem solid #00AD7C;
+	border-radius : 0 1rem;
+	display       : inline-block;
+}
+
+.about .over-lay .about-text p
+{
+	color     : #F3F3F3;
+	font-size : 1.3rem;
+}
+
+.about .over-lay .about-exper .prog > div:first-of-type
+{
+	font-size : 1.13rem;
+}
+
+.about .over-lay .about-exper .prog .progress
+{
+	height           : 1.3rem;
+	background-size  : 1rem 1rem;
+	background-image : linear-gradient(45deg, rgba(0, 173, 124, 0.3) 25%, transparent 25%, transparent 50%, rgba(0, 173, 124, 0.3) 50%, rgba(0, 173, 124, 0.3) 75%, transparent 75%, transparent);
+}
+
+.about .over-lay .about-exper .prog .progress
+{
+	background-color : #ECF0F1;
+}
+
+.about .over-lay .about-exper .prog .progress .progress-bar
+{
+	color            : #ECF0F1;
+	font-size        : 0.9rem;
+	font-weight      : bold;
+	height           : 1.3rem;
+	line-height      : 1.3rem;
+	background-color : #00AD7C;
+}
+
+/* End about */
+
+/* Start portofilo */
+/*
+
+.portofilo .container
+{
+	padding-bottom : 5px;
+	border-bottom  : 2px solid rgba(74, 65, 64, 0.65);
+	border-radius  : 3rem;
+}
+
+.portofilo .img-thumbnail
+{
+	height     : 250px;
+	width      : 100%;
+	border     : none;
+	box-sizing : border-box;
+	padding    : 0;
+}
+
+.portofilo .portofilo-box .portofilo-img
+{
+	transition    : filter 0.2s ease-in-out;
+	position      : relative;
+	overflow      : hidden;
+	border-radius : 0.25rem;
+}
+
+.portofilo .portofilo-box .portofilo-img .img-text
+{
+	position         : absolute;
+	top              : 0;
+	left             : 0;
+	color            : #F7F7F7;
+	width            : 100%;
+	height           : 100%;
+	background-color : rgba(0, 0, 0, 0.7);
+	display          : none;
+}
+
+.portofilo .portofilo-box .portofilo-img .img-text span i
+{
+	width            : 45px;
+	height           : 45px;
+	line-height      : 45px;
+	color            : #00AD7C;
+	background-color : #ECF0F1;
+	border           : 1px solid #00AD7C;
+	border-radius    : 50%;
+	cursor           : pointer;
+	transition       : color 0.2s ease-in-out,
+	background-color 0.2s ease-in-out,
+	border-color 0.2s ease-in-out;
+}
+
+.portofilo .portofilo-box .portofilo-img .img-text span i:hover
+{
+	color            : #ECF0F1;
+	background-color : #00AD7C;
+	border-color     : #F7F7F7;
+}
+*/
+
+/* End portofilo */
+
+/* Start Team */
+
+.team .team-text p
+{
+	font-size : 1.35rem;
+	padding   : 0 2rem;
+}
+
+.team .per-info .per-img img
+{
+	filter     : grayscale(100%);
+	transition : filter 0.2s ease-in-out;
+}
+
+.team .per-info .per-img img:hover
+{
+	filter : grayscale(0%);
+}
+
+.team .per-info .per-img .img-fluid
+{
+	max-height : 450px;
+}
+
+.team .per-info .per-img img
+{
+	border-radius : 1rem;
+}
+
+.team .per-info .per-det h6
+{
+	color : #00AD7C;
+}
+
+.team .per-info .social a
+{
+	transition : opacity 0.2s ease-in-out;
+	opacity    : 0.6;
+}
+
+.team .per-info .social a:nth-child(1)
+{
+	color : #3B5998;
+}
+
+.team .per-info .social a:nth-child(2)
+{
+	color : #DD4B39;
+}
+
+.team .per-info .social a:nth-child(3)
+{
+	color : #1DA1F2;
+}
+
+.team .per-info .social a:nth-child(4)
+{
+	color : #0077B5;
+}
+
+.team .per-info .social a:hover
+{
+	opacity : 1;
+}
+
+.team .per-info .social a i
+{
+	display : inline-block !important;
+}
+
+/* End Team */
+
+/* Start Contact-Us */
+
+.contact-us
+{
+	background      : url("../img/pexels-photo.jpg") no-repeat fixed center;
+	background-size : cover;
+	color           : #F7F7F7;
+}
+
+.contact-us .contacto
+{
+	background-color : rgba(74, 65, 64, 0.65);
+}
+
+.contact-us .contacto .contact-head h2
+{
+	color : #292B2C;
+}
+
+.contact-us .contacto .contact-head p
+{
+	font-size : 1.35rem;
+	padding   : 0 2rem;
+}
+
+.contact-us .contact-form input
+{
+	background-color : transparent;
+	color            : #F7F7F7;
+	border-color     : #00AD7C;
+	transition       : border-color 0.2s ease-in-out,
+	color 0.2s ease-in-out;
+}
+
+.contact-us .contact-form input:focus
+{
+	border-color : #F7F7F7;
+}
+
+.contact-us .contact-form input::placeholder
+{
+	color : #A5A5A5;
+}
+
+.contact-us .contact-form input:focus::placeholder
+{
+	color      : #F7F7F7;
+	transition : color 0.2s ease-in-out;
+}
+
+.contact-us .contact-form textarea::placeholder
+{
+	color : #A5A5A5;
+}
+
+.contact-us .contact-form textarea
+{
+	height           : 10rem;
+	background-color : transparent;
+	resize           : none;
+	color            : #F7F7F7;
+	border-color     : #00AD7C;
+	transition       : border-color 0.2s ease-in-out,
+	color 0.2s ease-in-out;
+}
+
+.contact-us .contact-form textarea:focus
+{
+	border-color : #F7F7F7;
+}
+
+.contact-us .contact-form textarea:focus::placeholder
+{
+	color      : #F7F7F7;
+	transition : color 0.2s ease-in-out;
+}
+
+.contact-us .contact-form .btn-info
+{
+	background   : #ECF0F1;
+	border-color : #00AD7C;
+	color        : #00AD7C;
+	font-size    : 1.1rem;
+}
+
+.contact-us .contact-form .btn-info:hover
+{
+	background : #00AD7C;
+	color      : #ECF0F1;
+}
+
+.contact-us .contact-info p
+{
+	font-size   : 1.25rem;
+	line-height : 2.3rem;
+}
+
+.contact-us .contact-info ul li
+{
+	text-align : left;
+}
+
+.contact-us i
+{
+	color : #00AD7C;
+}
+
+.contact-us .contact-info ul li a
+{
+	color           : #ECF0F1;
+	text-decoration : none;
+	transition      : color 0.2s ease-in-out;
+}
+
+.contact-us .contact-info ul li a:hover
+{
+	color : #00AD7C;
+}
+
+/* End Contact-Us */
+
+.to-up
+{
+	position         : fixed;
+	display          : none;
+	right            : 25px;
+	bottom           : 20px;
+	background-color : #ECF0F1;
+	border           : 2px solid #00AD7C;
+	color            : #00AD7C;
+	width            : 35px;
+	line-height      : 35px;
+	height           : 35px;
+	text-align       : center;
+	border-radius    : 0.5rem;
+	cursor           : pointer;
+	transition       : background-color 0.2s ease-in-out,
+	border 0.2s ease-in-out,
+	color 0.2s ease-in-out,
+	animation 0.2s ease-in-out;
+	animation        : up 1.5s ease-in-out infinite alternate;
+}
+
+.to-up:hover
+{
+	background-color     : #00AD7C;
+	border               : 2px solid #ECF0F1;
+	color                : #ECF0F1;
+	animation-play-state : paused;
+}
+
+@keyframes up
+{
+	0%
+	{
+		bottom : 20px;
+	}
+	
+	50%
+	{
+		bottom : 50px;
+	}
+	
+	100%
+	{
+		bottom : 20px;
+	}
+}
+
+@media (max-width : 575px)
+{
+	.nav-link
+	{
+		padding : 0;
+	}
+	
+	.nav-item
+	{
+		padding       : 0.5rem;
+		text-align    : center;
+		border-radius : 1rem;
+	}
+}
+
+@media (min-width : 576px) and (max-width : 991px)
+{
+	.nav-item
+	{
+		border-radius : 0.5rem;
+	}
+	
+}
